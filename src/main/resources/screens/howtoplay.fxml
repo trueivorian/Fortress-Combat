@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="900.0" minWidth="750.0" prefHeight="842.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.HowToPlayController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" layoutX="-292.0" layoutY="84.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/bg-1.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="53.0" layoutY="29.0" prefHeight="842.0" prefWidth="595.0">
+         <content>
+            <SplitPane dividerPositions="0.5, 0.5, 0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <ImageView fitHeight="842.0" fitWidth="595.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rules1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="842.0" fitWidth="595.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rules2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="842.0" fitWidth="595.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rules3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="842.0" fitWidth="595.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rules4.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="842.0" fitWidth="595.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rules5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="842.0" fitWidth="595.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rules6.jpg" />
+                     </image>
+                  </ImageView>
+               </items>
+            </SplitPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="665.0" layoutY="29.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="55.0" prefWidth="71.0" text="Return To Menu" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

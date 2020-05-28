@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.PlayMenuController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="400.0" fitWidth="640.0" layoutX="308.0" layoutY="283.0" opacity="0.5" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../images/bg-1.jpg" />
+               </image>
+            </ImageView>
+        <Label alignment="CENTER" layoutX="34.0" layoutY="24.0" style="&#10;" text="Let's Play!" textAlignment="CENTER" textFill="#464040" wrapText="false">
+          <font>
+            <Font name="High Tower Text" size="38.0" />
+          </font>
+        </Label>
+            <VBox alignment="CENTER" layoutX="41.0" layoutY="92.0" prefHeight="171.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" style="&#10;" text="Single Player " textAlignment="CENTER" textFill="#464040" wrapText="false">
+                     <font>
+                        <Font name="High Tower Text" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#playSoloOne" prefWidth="150.0" text="Play CPU">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label prefHeight="89.0" prefWidth="150.0" text="Single Player Fortress Combat. You can play against CPU controlled opponents in order to further your individual skill!" wrapText="true" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="221.0" layoutY="92.0" prefHeight="108.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" style="&#10;" text="Multiplayer" textAlignment="CENTER" textFill="#464040" wrapText="false">
+                     <font>
+                        <Font name="High Tower Text" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#openHostGame" prefWidth="150.0" text="Host Game">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openJoinGame" prefWidth="150.0" text="Join Game">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="221.0" layoutY="200.0" prefHeight="108.0" prefWidth="150.0" text="Multiplayer Fortress Combat! Lobby leaders choose settings for the game, any player gaps are filled by CPU opponents/allies. " wrapText="true" />
+            <VBox alignment="CENTER" layoutX="415.0" layoutY="92.0" prefHeight="108.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" style="&#10;" text="Misc" textAlignment="CENTER" textFill="#464040" wrapText="false">
+                     <font>
+                        <Font name="High Tower Text" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#openDeckEdit" prefWidth="150.0" text="Deck Edit">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label contentDisplay="CENTER" text="Deck Select">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="deckCombo" onAction="#setDeck" prefWidth="150.0" />
+                  <Label fx:id="deckDetectionLabel" text="Deck Not Chosen">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label layoutX="415.0" layoutY="209.0" prefHeight="108.0" prefWidth="150.0" text="You cannot play without a deck!" wrapText="true" />
+            <Button layoutX="545.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

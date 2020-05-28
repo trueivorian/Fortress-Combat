@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.PauseMenuController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="400.0" fitWidth="640.0" layoutX="391.0" layoutY="126.0" opacity="0.5" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../images/bg-1.jpg" />
+               </image>
+            </ImageView>
+        <Label alignment="CENTER" layoutX="264.0" layoutY="22.0" style="&#10;" text="Paused" textAlignment="CENTER" textFill="#464040" wrapText="false">
+          <font>
+            <Font name="High Tower Text" size="38.0" />
+          </font>
+        </Label>
+            <VBox alignment="CENTER" layoutX="247.0" layoutY="121.0" prefHeight="159.0" prefWidth="146.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#togglePause" prefWidth="150.0" text="Unpause">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#forfeitGame" prefWidth="150.0" text="Forfeit">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#exitGame" prefWidth="150.0" text="Exit">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" text="Sounds Fx" textAlignment="CENTER">
+                     <font>
+                        <Font name="High Tower Text" size="19.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="soundfxSlider" onDragDetected="#updateSFX" showTickLabels="true" showTickMarks="true" value="50.0" />
+                  <Label text="Music" textAlignment="CENTER">
+                     <font>
+                        <Font name="High Tower Text" size="19.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="musicSlider" onMouseDragReleased="#updateMusic" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="50.0" />
+               </children>
+            </VBox>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
