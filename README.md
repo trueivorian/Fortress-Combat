@@ -8,7 +8,7 @@ teachingAssistant = "Thomas Goodman";
 ```
 [TODO: LastOfUs](https://trello.com/invite/b/bn8zOmRW/4a027c272c65bcfe2c4aa95e10eb925e/lastofus)
 ## The Project : "Fortress Combat"
-Our Project is a video game in Java, based on Tayyab's card game: "Fortress Combat"
+Our Project is a video game in Java
 The main requirements for our task are:
 * Competitive Play
 * Networking
